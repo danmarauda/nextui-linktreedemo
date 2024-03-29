@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { Snippet } from "@nextui-org/snippet";
 
 import { Card, CardBody, CardHeader } from "@nextui-org/card";
@@ -62,7 +62,7 @@ export default function Home() {
             variant="bordered"
             copyIcon={<CopyIcon />}
             checkIcon={<CheckIcon />}
-            codeString="google.com"   /* Your website */
+            codeString="google.com" /* Your website */
             hideSymbol={true}
             style={{ padding: "2px", fontSize: "4px" }}
           />
@@ -73,8 +73,10 @@ export default function Home() {
             isBordered
             color="success"
             size="lg"
-            src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
-          
+            showFallback
+            name="Jeff"
+            src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+          />
         </div>
         <CardHeader className="pb-0">
           <CardBody className="text-center">
